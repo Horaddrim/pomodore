@@ -1,0 +1,31 @@
+{
+  "name": "pomodore",
+  "version": "0.0.1",
+  "description": "A simple terminal utility for elevate your time management for the next level!",
+  "main": "pomodore.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "--"
+  },
+  "keywords": [
+    "Pomodore-Technique",
+    "Node.js",
+    "CLI",
+    "setTimeout"
+  ],
+  "author": "Igor Franca <https://github.com/Horaddrim>",
+  "contributors": [
+    "Debora Garcia <https://github.com/deboradom>"
+  ],
+  "bin": {
+    "pomodore": "pomodore.js"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "chalk": "2.4.1",
+    "draftlog": "1.0.12"
+  }
+}
