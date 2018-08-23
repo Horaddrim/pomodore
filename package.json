@@ -1,6 +1,6 @@
 {
   "name": "pomodore",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A simple terminal utility for elevate your time management for the next level!",
   "main": "pomodore.js",
   "scripts": {
