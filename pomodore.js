@@ -21,13 +21,17 @@ async function waitFor(milliseconds) {
 
 function finishOnePomodore({ pomodoreCount, log, message }) {
   return async () =>{
-    spawn(
-      'espeak', 
-      ['-a', '120', '-p', '0', '-s', '310', 'Finished pomodore!'], 
-      {
-        stdio: 'pipe',
-      }
-    );
+    if(process.platform !== "linux") {
+      log(`Sorry! I can't speak your language ${process.platform} :/`);
+    } else {
+      spawn(
+        'espeak', 
+        ['-a', '120', '-p', '0', '-s', '310', 'Finished pomodore!'], 
+        {
+          stdio: 'pipe',
+        }
+      );
+    }
   
     log(colors.logMessages(`Finished ${pomodoreCount}!`));
   
